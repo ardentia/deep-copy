@@ -1,0 +1,35 @@
+{
+  "name": "@ardentia/deep-copy",
+  "version": "1.0.0",
+  "description": "A package that returns a deep copy of a given object or array",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "test": "ts-node --project=tsconfig.spec.json node_modules/jasmine/bin/jasmine --config=jasmine.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardentia/deep-copy.git"
+  },
+  "keywords": [
+    "deep copy",
+    "copy",
+    "js",
+    "copy",
+    "object",
+    "array"
+  ],
+  "author": "Plamena Radneva <rhythmxholic@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ardentia/deep-copy/issues"
+  },
+  "homepage": "https://github.com/ardentia/deep-copy#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.16",
+    "jasmine": "^3.4.0",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

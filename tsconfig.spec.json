@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  }
+}
