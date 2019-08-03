@@ -1,7 +1,6 @@
 # deep-copy
 This microlibrary provides a deep copy of a given object or array.
 
-
 ## Usage
 Install the library:
 ```bash
@@ -15,6 +14,8 @@ import getItemCopy from '@ardentia/deep-copy';
 //...
 const copy = getItemCopy(<value>);
 ```
+
+The library is built to be both ES6- and TypeScript-compatible.
 
 ### Examples:
 
