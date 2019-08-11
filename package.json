@@ -19,12 +19,16 @@
     "url": "https://github.com/ardentia/deep-copy.git"
   },
   "keywords": [
-    "deep copy",
+    "deep",
     "copy",
     "js",
-    "copy",
     "object",
-    "array"
+    "array",
+    "typescript",
+    "es6",
+    "library",
+    "microlibrary",
+    "tool"
   ],
   "author": "Plamena Radneva <rhythmxholic@gmail.com>",
   "license": "MIT",
