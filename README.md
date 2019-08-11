@@ -8,14 +8,25 @@ npm install @ardentia/deep-copy
 ```
 
 Then, in the file where you want to use it:
-```javascript
+```typescript
+//ES6 / TypeScript
+
 import getItemCopy from '@ardentia/deep-copy';
 
 //...
 const copy = getItemCopy(<value>);
 ```
 
-The library is built to be both ES6- and TypeScript-compatible.
+```javascript
+//node.js
+
+const getItemCopy = require('@ardentia/deep-copy/node').default;
+
+//...
+const copy = getItemCopy(<value>);
+```
+
+The library is built to be ES6-, TypeScript and node.js-compatible.
 
 ### Examples:
 
