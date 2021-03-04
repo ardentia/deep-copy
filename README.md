@@ -99,6 +99,36 @@ console.log(Object.is(arrayCopy[3][0], myCustomArray[3][0]));
 //false -> deep copy of object
 ```
 
+**Note:** If the object you are attempting to copy contains children that recursively reference their parent object, the call to `getItemCopy(...)` will cause a range error exception: `Range Error: Maximum call stack size exceeded`. If such an object structure is possible in your case, you need to place the call to `getItemCopy(...)` in a try-catch construction:
+
+```typescript
+import getItemCopy from '@ardentia/deep-copy';
+
+const rootObj = {
+  childA: null,
+  childB: null
+};
+
+const childA = {
+  a1: 'a1',
+  a2: 'a2',
+  root: rootObj
+};
+
+rootObj.childA = childA;
+
+const childB = {
+  b1: 'b1',
+  b2: 'b2',
+  root: rootObj
+};
+
+try {
+  const result = getItemCopy(rootObj);
+} catch(ex) {
+  // handle the range error exception
+}
+```
 ## Local Development
 1. Fork the project and clone it locally
 2. `npm install` to install the library dependencies

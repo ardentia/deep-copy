@@ -1,6 +1,6 @@
 {
   "name": "@ardentia/deep-copy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package that returns a deep copy of a given object or array",
   "main": "index.js",
   "module": "./es6/index.js",
@@ -28,7 +28,11 @@
     "es6",
     "library",
     "microlibrary",
-    "tool"
+    "tool",
+    "esnext",
+    "javascript",
+    "deep copy",
+    "ts"
   ],
   "author": "Plamena Radneva <rhythmxholic@gmail.com>",
   "license": "MIT",
